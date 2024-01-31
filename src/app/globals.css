@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: monospace;
+  color: green;
+  background-color: #000;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 100%;
+  border-radius: 6px;
+}
+
+/* For Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Make it thinner */
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Remove background */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: purple; /* Make it purple */
+}
+
+/* For Firefox */
+.hide-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: purple transparent; /* Make it purple and remove background */
+}
+
+/* For Chrome, Safari, and Opera */
+.hide-scrollbarc::-webkit-scrollbar {
+  width: 5px; /* Make it thinner */
+}
+
+.hide-scrollbarc::-webkit-scrollbar-track {
+  background: transparent; /* Remove background */
+}
+
+.hide-scrollbarc::-webkit-scrollbar-thumb {
+  background: green; /* Make it purple */
+}
+
+/* For Firefox */
+.hide-scrollbarc {
+  scrollbar-width: thin;
+  scrollbar-color: green transparent; /* Make it purple and remove background */
+}
+
+.remove-padding {
+  padding: 0 !important;
+}

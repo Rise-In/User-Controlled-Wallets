@@ -1,0 +1,33 @@
+{
+  "name": "user-controlled-wallets",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@circle-fin/w3s-pw-web-sdk": "^1.0.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.6",
+    "axios": "^1.6.5",
+    "http-proxy-middleware": "^2.0.6",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^10.0.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
